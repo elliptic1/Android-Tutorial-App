@@ -7,6 +7,8 @@
 .DS_Store
 /build
 /captures
+keystore
+keystore.pub
 =======
 # Built application files
 *.apk
