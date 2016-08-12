@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     // When an item is selected, this method is called by the Android system.
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -112,10 +111,12 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.github_menu_item) {
 
-            // Here my menu item was pressed, so I want to send the user to github
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-            startActivity(browserIntent);
+            // When my menu item is pressed, I intend to send the user to github
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://github.com/elliptic1/HappyBirthdayPatrick"));
 
+            // This will launch the browser
+            startActivity(browserIntent);
 
             return true;
         }
