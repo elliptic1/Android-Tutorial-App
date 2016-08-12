@@ -1,4 +1,4 @@
-Happy Birthday!
+Happy Birthday Patrick!
 
 This is a simple app with lots of comments so you can see how it works.
 
