@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---
+
+Android layouts are structured in a hierarchy of containers. The outermost
+containers are usually LinearLayout or RelativeLayout or a few others.
+
+The Linear Layout arranges things in order.
+The Relative Layout arranges things in relation to the parent container or other elements.
+-->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tbse.happybirthdaypatrick.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!-- The TextView class holds text. I use a string resource to point to the actual text.
+    The 'id' which I have called 'textView' is how we refer to this in the code.
+    The layout width and height are required for every element in a layout file.
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+</RelativeLayout>

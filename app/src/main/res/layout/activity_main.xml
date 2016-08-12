@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+The Coordinator Layout is a new thing Google made this past year. It makes it easier
+to create toolbars and menus and things that all move and slide together in a nice Googley way.
+
+Here it lets me use the class FloatingActionButton, which is the big pink button in the corner.
+This class gives it a nice shadow and makes the touch-ripple and makes the button move when the
+gray message comes up from the bottom, and handles other things.  -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tbse.happybirthdaypatrick.MainActivity">
+
+    <!-- The AppBarLayout class wraps the menu at the top which shows the activity label
+    and the menu -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- This include statement brings in the real page content, which by looking at @layout/content_main
+    you know is in a resource file at src/main/res/layout/content_main.xml -->
+
+    <include layout="@layout/content_main"/>
+
+    <!-- This is the Floating Action Button!
+    It's Google's latest method of giving the user easy access to the most-used function
+    of the app. So, for an email client maybe it would start a new email, and for the Google Drive
+    app it could be a search button.
+    -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email"/>
+
+</android.support.design.widget.CoordinatorLayout>

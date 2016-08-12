@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tbse.happybirthdaypatrick.MainActivity">
+
+    <!-- This is how you add things to the menu -->
+
+    <item
+        android:id="@+id/github_menu_item"
+        android:orderInCategory="100"
+        android:title="@string/go_to_github"
+        app:showAsAction="never"/>
+</menu>
