@@ -6,7 +6,7 @@ to create toolbars and menus and things that all move and slide together in a ni
 
 Here it lets me use the class FloatingActionButton, which is the big pink button in the corner.
 This class gives it a nice shadow and makes the touch-ripple and makes the button move when the
-gray message comes up from the bottom, and handles other things.  -->
+gray message comes up from the bottom (it's called a SnackBar), and handles other things.  -->
 
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,7 +40,7 @@ gray message comes up from the bottom, and handles other things.  -->
     <include layout="@layout/content_main"/>
 
     <!-- This is the Floating Action Button!
-    It's Google's latest method of giving the user easy access to the most-used function
+    It's Google's latest recommended method of giving the user easy access to the most-used function
     of the app. So, for an email client maybe it would start a new email, and for the Google Drive
     app it could be a search button.
     -->

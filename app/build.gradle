@@ -24,7 +24,7 @@ android {
 
     defaultConfig {
         applicationId "com.tbse.happybirthdaypatrick"
-        minSdkVersion 16
+        minSdkVersion 10
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

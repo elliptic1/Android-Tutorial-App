@@ -36,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * In the onCreate method you get all the things from the layout file. Get the buttons, and text, and whatever
-     * is in your layout that you want to do stuff with.
-     *
+     * In the onCreate method you get all the things from the layout file. Get the buttons, and
+     * text, and whatever is in your layout that you want to do stuff with.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         // findViewById returns a View, which is a superclass of TextView,
         // so you have to cast it to the kind of view you want to mess with.
 
-        TextView textView = (TextView) findViewById(R.id.textView);
+        TextView textView = (TextView) findViewById(R.id.paragraph1);
         textView.setTextColor(ContextCompat.getColor(this, R.color.black));
 
         // Get the toolbar to tell Android that it's your toolbar
@@ -122,5 +121,44 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // This method is called because I set the onClick method in the layout file
+    // Look for the line 'android:onClick="as_url_click"' in content_main.xml
+    public void as_url_click(View v) {
+        // When the url is clicked, I intend to send the user to github
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.android_studio_url)));
+        startActivity(browserIntent);
+    }
+
+    public void manifest_click(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.manifest_url)));
+        startActivity(browserIntent);
+    }
+
+    public void main_activity_click(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.main_activity_url)));
+        startActivity(browserIntent);
+    }
+
+    public void main_layout_click(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.main_layout_url)));
+        startActivity(browserIntent);
+    }
+
+    public void colors_click(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.colors_url)));
+        startActivity(browserIntent);
+    }
+
+    public void strings_click(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(getString(R.string.strings_url)));
+        startActivity(browserIntent);
     }
 }

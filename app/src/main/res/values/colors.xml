@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- This file is where you put all the colors you want to use in your app.
+    I added some for the buttons. You can refer to them like R.color.blue -->
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="black">#000000</color>
+    <color name="blue">#3498db</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="wisteria">#8e44ad</color>
+    <color name="orange">#f39c12</color>
 </resources>
