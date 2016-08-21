@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
             // When my menu item is pressed, I intend to send the user to github
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://github.com/elliptic1/HappyBirthdayPatrick"));
+                    Uri.parse(getString(R.string.code_url)));
 
             // This will launch the browser
             startActivity(browserIntent);

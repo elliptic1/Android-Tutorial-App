@@ -10,6 +10,7 @@
     <string name="android_studio_url">https://developer.android.com/studio/</string>
     <string name="paragraph2">There are just a couple parts of a basic Android app. They are the manifest and the main activity.</string>
     <string name="paragraph3">The Manifest tells the Android operating system what your app does. See the manifest for this app at the button below.</string>
+    <string name="code_url">https://github.com/elliptic1/HappyBirthdayPatrick</string>
     <string name="manifest_url">https://github.com/elliptic1/HappyBirthdayPatrick/blob/master/app/src/main/AndroidManifest.xml</string>
     <string name="see_the_manifest">See the Manifest!</string>
     <string name="paragraph4">The Main Activity is the screen you see when you open the app (this one!). It\'s where most of the things happen (showing the screen and buttons and text). The main layout file determines how the buttons and text are arranged on the screen.</string>
