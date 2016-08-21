@@ -14,7 +14,7 @@
     <string name="see_the_manifest">See the Manifest!</string>
     <string name="paragraph4">The Main Activity is the screen you see when you open the app (this one!). It\'s where most of the things happen (showing the screen and buttons and text). The main layout file determines how the buttons and text are arranged on the screen.</string>
     <string name="main_activity_url">https://github.com/elliptic1/HappyBirthdayPatrick/blob/master/app/src/main/java/com/tbse/happybirthdaypatrick/MainActivity.java</string>
-    <string name="main_layout_url">https://github.com/elliptic1/HappyBirthdayPatrick/blob/master/app/src/main/res/layout/content_main.xml</string>
+    <string name="main_layout_url">https://github.com/elliptic1/HappyBirthdayPatrick/blob/master/app/src/main/res/layout/activity_main.xml</string>
     <string name="see_the_main_activity">See the Main Activity!</string>
     <string name="see_the_main_layout">See the Main Layout!</string>
     <string name="paragraph5">The resource files strings.xml and colors.xml are where you put your, well, strings and colors!</string>

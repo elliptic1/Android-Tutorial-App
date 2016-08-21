@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // This method is called because I set the onClick method in the layout file
-    // Look for the line 'android:onClick="as_url_click"' in content_main.xml
+    // Look for the line 'android:onClick="as_url_click"' in activity_main.xml
     public void as_url_click(View v) {
         // When the url is clicked, I intend to send the user to github
         Intent browserIntent = new Intent(Intent.ACTION_VIEW,

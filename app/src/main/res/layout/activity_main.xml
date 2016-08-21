@@ -8,8 +8,7 @@ Here it lets me use the class FloatingActionButton, which is the big pink button
 This class gives it a nice shadow and makes the touch-ripple and makes the button move when the
 gray message comes up from the bottom (it's called a SnackBar), and handles other things.  -->
 
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,14 +29,163 @@ gray message comes up from the bottom (it's called a SnackBar), and handles othe
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <!-- This include statement brings in the real page content, which by looking at @layout/content_main
-    you know is in a resource file at src/main/res/layout/content_main.xml -->
+    <!---
+ Android layouts are structured in a hierarchy of containers. The outermost
+ containers are usually LinearLayout or RelativeLayout or a few others.
 
-    <include layout="@layout/content_main"/>
+ The Linear Layout arranges things in order.
+ The Relative Layout arranges things in relation to the parent container or other elements.
+ The ScrollView lets you scroll things up and down!
+ -->
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.tbse.happybirthdaypatrick.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- The TextView class holds text. I use a string resource to point to the actual text.
+            The 'id' which I have called 'paragraph1' is how we refer to this text in the code.
+            The layout width and height are required for every element in a layout file.
+            -->
+            <TextView
+                android:id="@+id/paragraph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/paragraph1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/android_studio_url_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paragraph1"
+                android:layout_centerHorizontal="true"
+                android:onClick="as_url_click"
+                android:paddingBottom="10dp"
+                android:text="@string/android_studio_url"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/paragraph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/android_studio_url_id"
+                android:paddingBottom="10dp"
+                android:text="@string/paragraph2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/paragraph3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paragraph2"
+                android:paddingBottom="10dp"
+                android:text="@string/paragraph3"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/manifest_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paragraph3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@color/alizarin"
+                android:onClick="manifest_click"
+                android:padding="5dp"
+                android:text="@string/see_the_manifest" />
+
+            <TextView
+                android:id="@+id/paragraph4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manifest_button_id"
+                android:paddingBottom="10dp"
+                android:text="@string/paragraph4"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/main_activity_button_id"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paragraph4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/wisteria"
+                android:onClick="main_activity_click"
+                android:padding="5dp"
+                android:text="@string/see_the_main_activity" />
+
+            <Button
+                android:id="@+id/main_layout_button_id"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/paragraph4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/orange"
+                android:onClick="main_layout_click"
+                android:padding="5dp"
+                android:text="@string/see_the_main_layout" />
+
+            <TextView
+                android:id="@+id/paragraph5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_activity_button_id"
+                android:paddingBottom="10dp"
+                android:text="@string/paragraph5"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/colors_button_id"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/paragraph5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/blue"
+                android:onClick="colors_click"
+                android:padding="5dp"
+                android:text="@string/see_the_colors" />
+
+            <Button
+                android:id="@+id/strings_button_id"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/paragraph5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/colors_button_id"
+                android:background="@color/nephritis"
+                android:onClick="strings_click"
+                android:padding="5dp"
+                android:text="@string/see_the_strings"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+    </ScrollView>
 
     <!-- This is the Floating Action Button!
     It's Google's latest recommended method of giving the user easy access to the most-used function
@@ -50,6 +198,6 @@ gray message comes up from the bottom (it's called a SnackBar), and handles othe
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email"/>
+        android:src="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
