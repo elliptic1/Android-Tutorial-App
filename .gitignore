@@ -9,6 +9,7 @@
 /captures
 keystore
 keystore.pub
+keystore.jks
 =======
 # Built application files
 *.apk
