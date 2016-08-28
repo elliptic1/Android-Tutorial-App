@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.tbse.happybirthdaypatrick">
+          package="com.tbse.androidtutorial">
 
     <!--
 
-   Happy Birthday Patrick!
-
    Here's a basic app with many comments from me.
-
-   -Uncle Todd
-
 
    This is the Manifest. Every app has one. It's the first place the Android operating system
    will go to run your app. It tells Android what's in the app and what to do next.
 
    This file is in XML format. It gives name and value pairs like this:
 
-   <Patrick
-     age:12
+   <Joe
+     age:52
      color:blue
      />
 

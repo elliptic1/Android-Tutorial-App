@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="com.tbse.happybirthdaypatrick.MainActivity">
+      tools:context="com.tbse.androidtutorial.MainActivity">
 
     <!-- This is how you add things to the menu -->
 

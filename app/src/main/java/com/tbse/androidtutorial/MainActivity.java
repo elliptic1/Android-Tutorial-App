@@ -1,7 +1,7 @@
-package com.tbse.happybirthdaypatrick;
+package com.tbse.androidtutorial;
 
 // The 'package' is just the directory structure below app/src/main/java/
-// So this file is at app/src/main/java/com/tbse/happybirthdaypatrick/MainActivity.java
+// So this file is at app/src/main/java/com/tbse/androidtutorial/MainActivity.java
 
 // You know how imports work!
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 //Do stuff here when the button is clicked
-                Snackbar.make(view, "Happy Birthday Patrick!!!!!", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Android Rulez!!!!!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

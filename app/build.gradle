@@ -18,12 +18,12 @@ android {
     /**
      *
      * This app will be in the store at
-     * https://play.google.com/store/apps/details?id=com.tbse.happybirthdaypatrick
+     * https://play.google.com/store/apps/details?id=com.tbse.androidtutorial
      *
      */
 
     defaultConfig {
-        applicationId "com.tbse.happybirthdaypatrick"
+        applicationId "com.tbse.androidtutorial"
         minSdkVersion 10
         targetSdkVersion 24
         versionCode 1
@@ -40,6 +40,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:design:24.1.1'
+    def supportVersion = '24.2.0'
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.android.support:design:${supportVersion}"
 }

@@ -1,4 +1,4 @@
-package com.tbse.happybirthdaypatrick;
+package com.tbse.androidtutorial;
 
 import org.junit.Test;
 
